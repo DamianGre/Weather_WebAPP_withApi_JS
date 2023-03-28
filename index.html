@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja pogodowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+    </header>
+
+    <main>
+        <div clas="app_top"> 
+            <input type="text" placeholder="Podaj nazwę miasta">
+            <button>Sprawdź pogodę</button>
+            <p class="error"></p>
+        </div>
+
+        <div class="app_bottom">
+            
+            <p class="date"></p>
+            <h2 class="city_name"></h2>            
+            <div class="weather_box">
+                <div class="temperature_box">
+                    <img src="" alt="">
+                    <p class="temperature"></p>
+                </div>
+                <p class="description"></p>
+            </div>            
+            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+            <p>Wilgotność: <span class="humidity"></span></p>
+            <p>Ciśnienie: <span class="pressure"></span></p>
+            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+            <p>Zachmurzenie: <span class="clouds"></span></p>
+        </div>
+    </main>   
+
+    <footer>
+        Projekt Damian Grembocki
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

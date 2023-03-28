@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    background-color: #48484a;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.app_top {
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #eb6e4b;
+}
+
+.weather_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature_box {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.temperature {
+    font-size: 45px;
+    padding: 10px;
+}
+
+.orange {
+    background-color: #eb6e4b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+img {
+    width: 60px;
+}
+
+.weather_box ~ p {
+    margin: 15px 0px;
+}
+
+.error {
+    color: red;
+}
+
+span {
+    font-weight: bold;
+}
